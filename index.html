@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Smit Patne's Portfolio - Data Analyst and Full-Stack Developer, showcasing experience and projects in data science, machine learning, and software development."
+    />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Asmita Deshpande</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Asmita Deshpande</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Asmita Deshpande</h1>
+        <div class="btn-container" style="justify-content: center;">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Smit_Patne - Resume.pdf')"
+          >
+            Download Resume
+          </button>
+        </div>
+      </div>
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Asmita Deshpande profile picture" />
+      </div>
+    </section>
+    <section id="about" class="hidden">
+      <h1 class="title">About Me</h1>
+      <div class="section-container hidden-children">
+        <div class="section__pic-container">
+          <img
+            src="./assets/UMBC-retriever-social-media.png"
+            alt="Profile picture of Smit Patne"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Dynamic professional with a Master of Science in Information Systems and a Bachelor of Technology in Computer Engineering, actively seeking opportunities as a Data and Business Analyst. Proficient in leveraging advanced data analysis techniques and visualization tools such as Tableau and Power BI, combined with experience in cloud platforms like AWS and Azure, to deliver actionable insights, drive strategic business decisions, and enhance operational efficiency.
+            </p>
+          </div>
+          <div class="education-section">
+            <h2>Education</h2>
+            <div class="education-details">
+              <h3>Master of Science in Information Systems</h3>
+              <p>University of Maryland Baltimore County</p>
+              <p>2022 - 2024</p>
+              <br/>
+              <h3>Bachelor of Technology in Computer Engineering</h3>
+              <p>University Name</p>
+              <p>2017 - 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow pointing to experience section"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience" class="hidden">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Software Developer</h3>
+            <p class="experience-sub-title">Company Name | Jan 2022 - Present</p>
+            <div class="article-container">
+              <p>• Developed scalable web applications using modern frameworks and technologies</p>
+              <p>• Implemented responsive designs for optimal user experience across devices</p>
+              <p>• Optimized backend APIs resulting in 40% improved performance</p>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h3>Data Engineer Intern</h3>
+            <p class="experience-sub-title">Celebal Technologies | May 2021 - Aug 2021</p>
+            <div class="article-container">
+              <p>• Built and optimized data pipelines using Azure Data Factory and Databricks</p>
+              <p>• Implemented SQL optimization techniques for large-scale data processing</p>
+              <p>• Collaborated with cross-functional teams to deliver data solutions</p>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h3>Web Development Intern</h3>
+            <p class="experience-sub-title">Scorp Technologies | Jun 2020 - Aug 2020</p>
+            <div class="article-container">
+              <p>• Designed and developed responsive web interfaces using HTML, CSS, and JavaScript</p>
+              <p>• Enhanced user engagement through improved UI/UX implementations</p>
+              <p>• Contributed to performance optimization initiatives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container hidden-children">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container project-card">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/End-to-endML.jpg" alt="End-to-end ML Project" class="project-img" />
+                <img src="./assets/End-to-endML2.jpg" alt="End-to-end ML Project" class="project-img" />
+                <img src="./assets/End-to-endML3.jpg" alt="End-to-end ML Project" class="project-img" />
+              </div>
+            </div>
+            <h2 class="project-title">End-to-End ML deployed on AWS</h2>
+            <p class="project-description">
+              A comprehensive machine learning project deployed on AWS, featuring data processing, model training, and real-time predictions.
+            </p>
+            <div class="project-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Machine Learning</span>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/" class="btn btn-color-2 project-btn" target="_blank">
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                GitHub
+              </a>
+              <a href="https://github.com/smithp17/ML_end_to_end" class="btn btn-color-2 project-btn" target="_blank">
+                Live Demo
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="details-container project-card">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/Image_classifier1.jpg" alt="Image Classification Project" class="project-img" />
+                <img src="./assets/Image_classifier2.jpg" alt="Image Classification Project" class="project-img" />
+                <img src="./assets/Image_classifier3.jpg" alt="Image Classification Project" class="project-img" />
+              </div>
+            </div>
+            <h2 class="project-title">Image Classification CNN</h2>
+            <p class="project-description">
+              A deep learning project implementing Convolutional Neural Networks for accurate image classification.
+            </p>
+            <div class="project-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Deep Learning</span>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/smithp17/Image-Classification-" class="btn btn-color-2 project-btn" target="_blank">
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                GitHub
+              </a>
+              <a href="https://github.com/" class="btn btn-color-2 project-btn" target="_blank">
+                Live Demo
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="details-container project-card">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/forexvis1.jpg" alt="Forex Visualization Project" class="project-img" />
+                <img src="./assets/forexvis2.jpg" alt="Forex Visualization Project" class="project-img" />
+                <img src="./assets/forexvis3.jpg" alt="Forex Visualization Project" class="project-img" />
+              </div>
+            </div>
+            <h2 class="project-title">Forex Visualization-React</h2>
+            <p class="project-description">
+              A React-based application for visualizing and analyzing forex market data with interactive charts.
+            </p>
+            <div class="project-skills">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/smithp17/FOREX-vis" class="btn btn-color-2 project-btn" target="_blank">
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                GitHub
+              </a>
+              <a href="https://github.com/" class="btn btn-color-2 project-btn" target="_blank">
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="github-cta">
+          <p>Connect with me on Github for more such interesting projects</p>
+          <a href="https://github.com/asmitad13" class="btn btn-color-2 project-btn" target="_blank">
+            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+            Visit My GitHub
+          </a>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    
+    <section id="contact" class="hidden">
+      <p class="section__text__p1">Let's Connect</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container hidden-children">
+        <div class="contact-info-container">
+          <div class="contact-icon-wrapper email">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+          </div>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p><a href="mailto:addeshpande2024@gmail.com">addeshpande2024@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-container">
+          <div class="contact-icon-wrapper linkedin">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+          </div>
+          <div class="contact-details">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/asmita-deshpande/">Connect with me</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-container">
+          <div class="contact-icon-wrapper tableau">
+            <img
+              src="./assets/tableau-icon.png"
+              alt="Tableau icon"
+              class="icon contact-icon"
+            />
+          </div>
+          <div class="contact-details">
+            <h3>Tableau</h3>
+            <p><a href="https://public.tableau.com/app/profile/asmita.deshpande/vizzes">View my visualizations</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          Copyright © 2024 Smit Patne. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
