@@ -61,44 +61,34 @@ nav {
 }
 
 .nav-links-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .nav-links {
   display: flex;
-  gap: 3rem;
-  position: absolute;
-  right: 2rem;
+  justify-content: center;
+  gap: 2rem;
   list-style: none;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
-  margin: 0;
-  padding: 0;
+  text-align: center;
 }
 
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-a {
-  color: #f0f0f0;
+.nav-links a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
   transition: color 0.3s ease;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
-a:hover {
-  color: #90caf9;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
+.nav-links a:hover {
+  color: white;
 }
 
 .logo {
@@ -486,7 +476,83 @@ section {
 
 /* ABOUT SECTION - Enhanced UMBC Image */
 #about {
+  padding: 0 10rem;
+}
+
+/* Text container with cyan frame */
+.text-container {
   position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Cyan border glow effect */
+.text-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;  /* Covers all sides */
+  border-radius: 2rem;
+  padding: 2px;  /* Border width */
+  background: linear-gradient(
+    135deg,
+    transparent,
+    #00ffff,
+    transparent
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Education items with same frame effect */
+.education-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    #00ffff,
+    transparent
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Hover effects */
+.text-container:hover,
+.education-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .section-container {
@@ -511,7 +577,19 @@ section {
 }
 
 .text-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
   margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.text-container p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .education-section {
@@ -544,24 +622,41 @@ section {
 }
 
 /* Profile picture styling */
-.section__pic-container {
-  position: relative;
+.profile-pic-container {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  margin: auto 0;
+}
+
+.profile-pic {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;  /* This will ensure the profile pic fills the circle nicely */
 }
 
 /* UMBC logo styling */
-.umbc-logo-container {
+.about-pic-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
-.umbc-logo {
-  width: 300px;
-  height: 300px;
+.about-pic {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: black;
+  background-color: #000000;
+  padding: 1.5rem;
+  border: 2px solid #FDB515;
+}
+
+/* Add hover effect for better interaction */
+.about-pic:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 25px rgba(253, 181, 21, 0.2);
 }
 
 .experience-details-container {
@@ -647,10 +742,12 @@ section {
 }
 
 .article-container p {
-  line-height: 1.5;
-  color: #555;
-  position: relative;
-  padding-left: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .article-container p::before {
@@ -702,20 +799,23 @@ section {
 .contact-info-container {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
+  gap: 1rem;
+  padding: 1rem;
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  min-width: 280px;
+  text-decoration: none;  /* Remove default link underline */
+  color: inherit;  /* Keep text color consistent */
 }
 
 .contact-info-container:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-info-container h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .contact-icon-wrapper {
@@ -725,7 +825,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-icon-wrapper.email {
@@ -739,15 +840,28 @@ section {
 }
 
 .contact-icon-wrapper.tableau {
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border: none;
 }
 
 .contact-icon {
   width: 25px;
   height: 25px;
-  filter: brightness(0) invert(1);
-  opacity: 0.8;
+  filter: brightness(1) invert(1);
+  opacity: 0.9;
+}
+
+.tableau .contact-icon {
+  filter: none;
+  opacity: 1;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.contact-icon-wrapper.tableau {
+  background: transparent;
+  border: none;
 }
 
 .contact-details {
@@ -883,11 +997,30 @@ section {
 .github-cta {
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .github-cta p {
-  margin-bottom: 1rem;
-  color: rgb(85, 85, 85);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.github-cta .project-btn {
+  padding: 0.8rem 1.5rem;
+  min-width: 140px;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.github-cta .btn-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 /* Scrollbar styling */
@@ -903,4 +1036,161 @@ section {
 .project-img-container::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+/* About section styling to match Experience section */
+#about .section-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.text-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.text-container p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
+  transform: translateY(-2px);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.education-item h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-item p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Education section title */
+.education-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Responsive padding for smaller screens */
+@media (max-width: 1024px) {
+  #about {
+    padding: 0 5rem;
+  }
+  #about::before {
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 0 2rem;
+  }
+  #about::before {
+    left: 1rem;
+  }
+}
+
+/* Experience section description text */
+.article-container p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Keep the experience sub-title (company & date) slightly dimmer */
+.experience-sub-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Keep headings unchanged */
+.details-container h3 {
+  color: #FFA500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Experience section container adjustments */
+.details-container {
+  padding-left: 3rem;  /* Add padding to move content away from blue line */
+}
+
+/* Article container with bullet points */
+.article-container {
+  position: relative;
+  padding-left: 1.5rem;  /* Space for bullets */
+}
+
+/* Custom bullet points */
+.article-container p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);  /* Increased opacity for better visibility */
+  font-size: 1.1rem;
+  line-height: 1.8;  /* Increased line height */
+  margin-bottom: 1.2rem;  /* More space between points */
+  padding-left: 1rem;  /* Space for bullet point */
+}
+
+.article-container p::before {
+  content: "•";
+  position: absolute;
+  left: -0.5rem;  /* Position bullet outside of text */
+  color: rgba(0, 255, 255, 0.8);  /* Cyan color matching the line */
+  font-size: 1.2rem;  /* Slightly larger bullets */
+}
+
+/* Keep the experience sub-title styling */
+.experience-sub-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;  /* Align with text */
+}
+
+/* Keep headings unchanged */
+.details-container h3 {
+  color: #FFA500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;  /* Align with text */
 }
