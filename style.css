@@ -11,8 +11,8 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 html {
@@ -460,9 +460,9 @@ section {
 }
 
 .btn-color-2 {
-  background-color: #1e1e1e;
-  color: #90caf9;
-  border: 2px solid #90caf9;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(0, 255, 255, 0.2);
 }
 
 .btn-color-1:hover {
@@ -470,8 +470,7 @@ section {
 }
 
 .btn-color-2:hover {
-  background-color: #90caf9;
-  color: #121212;
+  background: rgba(0, 255, 255, 0.1);
 }
 
 /* ABOUT SECTION - Enhanced UMBC Image */
@@ -517,9 +516,11 @@ section {
 /* Education items with same frame effect */
 .education-item {
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
   border-radius: 2rem;
-  padding: 2.5rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
@@ -677,9 +678,9 @@ section {
 
 .details-container {
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   position: relative;
@@ -919,7 +920,8 @@ section {
   position: relative;
   width: 100%;
   border-radius: 2rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
+  border: 1px solid rgba(0, 255, 255, 0.2);
   padding: 2rem;  /* Restored original padding */
 }
 
@@ -960,13 +962,13 @@ section {
 
 .project-title {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .project-description {
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -987,17 +989,17 @@ section {
   margin-right: 0.8rem;
   margin-bottom: 0.8rem;
   display: inline-block;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
   transition: all 0.3s ease;  /* Smooth transition for hover effects */
-  border: 1px solid rgba(0, 255, 255, 0.1);  /* Subtle border */
+  border: 1px solid rgba(0, 255, 255, 0.2);  /* Subtle border */
 }
 
 .skill-tag:hover {
-  background: rgba(0, 255, 255, 0.15);  /* Cyan tint on hover */
+  background: rgba(0, 255, 255, 0.15);
   transform: translateY(-3px);  /* Slight lift effect */
   box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);  /* Glow effect */
-  border: 1px solid rgba(0, 255, 255, 0.3);  /* Brighter border on hover */
-  color: white;  /* Brighter text on hover */
+  border: 1px solid rgba(0, 255, 255, 0.2);  /* Brighter border on hover */
+  color: #ffffff;  /* Brighter text on hover */
 }
 
 /* Optional: Add a subtle active state */
@@ -1103,24 +1105,25 @@ section {
 }
 
 .education-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2.5rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
 }
 
 .education-item:hover {
+  transform: translateY(-5px);
   background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
-  transform: translateY(-2px);
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
 }
 
 .education-item h3 {
-  color: white;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -1134,7 +1137,7 @@ section {
 .education-container h2 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #ffffff;
   text-align: center;
   position: relative;
   padding: 1rem 0;
@@ -1308,7 +1311,7 @@ section {
     grid-column: 1 / -1;  /* Span across both columns */
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: white;
+    color: #ffffff;
     text-align: center;
     position: relative;
     padding: 1rem 0;
@@ -1330,6 +1333,7 @@ section {
 .education-item {
     background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
     border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
     border-radius: 2rem;
     padding: 2rem;
     transition: all 0.3s ease;
@@ -1344,7 +1348,7 @@ section {
 
 /* Education item content */
 .education-item h3 {
-    color: white;
+    color: #ffffff;
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -1367,4 +1371,197 @@ section {
         grid-template-columns: 1fr;  /* Single column on mobile */
         padding: 0 2rem;
     }
+}
+
+/* Experience section containers */
+.details-container {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for containers */
+.details-container:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Experience title styling */
+.details-container h3 {
+    color: #00ffff;  /* Cyan color for all titles */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Subtitle styling */
+.experience-sub-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Section title */
+.title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Optional: Add underline effect to section title */
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ffff, transparent);
+}
+
+/* Container hover effect for title */
+.details-container:hover h3 {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Experience section layout */
+.experience-details-container {
+    padding: 0 2rem;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Remove any existing border or line styles */
+.details-container::before,
+.details-container::after {
+    display: none;
+}
+
+/* About Me heading styling */
+#about h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* Underline effect */
+#about h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ffff, transparent);
+}
+
+/* Optional: Add hover effect */
+#about h1:hover::after {
+    width: 150px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Ensure proper spacing */
+#about {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Experience heading styling */
+#experience h1.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* Underline effect */
+#experience h1.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ffff, transparent);
+}
+
+/* Hover effect */
+#experience h1.title:hover::after {
+    width: 150px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Section spacing */
+#experience {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Resume button styling */
+.btn.btn-color-2 {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effects */
+.btn.btn-color-2:hover {
+    background: rgba(0, 255, 255, 0.1);
+    border-color: rgba(0, 255, 255, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+/* Active state */
+.btn.btn-color-2:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+}
+
+/* Optional: Add glow effect on hover */
+.btn.btn-color-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.btn.btn-color-2:hover::before {
+    left: 100%;
 }
