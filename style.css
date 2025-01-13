@@ -1565,3 +1565,38 @@ section {
 .btn.btn-color-2:hover::before {
     left: 100%;
 }
+
+/* Projects heading styling */
+#projects h1.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* Underline effect */
+#projects h1.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ffff, transparent);
+}
+
+/* Hover effect */
+#projects h1.title:hover::after {
+    width: 150px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Section spacing */
+#projects {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
