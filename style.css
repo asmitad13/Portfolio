@@ -1758,3 +1758,46 @@ h6,
 .menu-links a {
   color: white !important;
 }
+
+/* GitHub button text color */
+.btn-container .btn {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-container .btn:hover {
+  color: white;  /* Keeps text white even on hover */
+}
+
+/* Navigation text colors - with highest specificity */
+nav#desktop-nav,
+nav#hamburger-nav,
+nav#desktop-nav .logo,
+nav#hamburger-nav .logo,
+nav#desktop-nav .nav-links li a,
+nav#hamburger-nav .menu-links li a {
+    color: white !important;
+}
+
+/* GitHub button specific styling */
+.btn-container .btn,
+.btn-container .btn:hover,
+.project-btn,
+.project-btn:hover {
+    color: white !important;
+}
+
+/* Target all GitHub buttons with maximum specificity */
+.github-cta a.btn.btn-color-2.project-btn,
+.github-cta a.btn.btn-color-2.project-btn:hover,
+.btn-container a.btn.btn-color-2.project-btn,
+.btn-container a.btn.btn-color-2.project-btn:hover,
+a[href*="github"].btn.btn-color-2.project-btn,
+a[href*="github"].btn.btn-color-2.project-btn:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.profile-pic {
+    border: 4px solid #051650;
+}
