@@ -52,6 +52,7 @@ nav {
   height: 8vh;
   width: 100%;
   position: relative;
+  color: white;
 }
 
 #desktop-nav div:last-child {
@@ -1720,4 +1721,40 @@ h6,
 .btn-color-2:hover,
 .project-btn:hover {
     color: #FFFFFF !important;
+}
+
+#desktop-nav .logo,
+#hamburger-nav .logo {
+  color: white;
+}
+
+.nav-links li a,
+.menu-links li a {
+  color: white;
+}
+
+/* Navigation text colors */
+#desktop-nav,
+#hamburger-nav {
+  color: white !important;
+}
+
+#desktop-nav .logo,
+#hamburger-nav .logo {
+  color: white !important;
+}
+
+.nav-links li a,
+.menu-links li a {
+  color: white !important;
+}
+
+.menu-links a {
+  color: white !important;
+}
+
+/* Override any other styles that might affect nav text color */
+.nav-links a,
+.menu-links a {
+  color: white !important;
 }
