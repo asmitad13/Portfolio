@@ -11,8 +11,8 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 html {
@@ -20,7 +20,7 @@ html {
 }
 
 p {
-  color: #e0e0e0;
+  color: #000000;
 }
 
 /* TRANSITION */
@@ -40,8 +40,8 @@ nav {
   align-items: center;
   height: 10vh;
   padding: 0 2rem;
-  background: linear-gradient(90deg, #28313b, #485461); /* Gradient nav */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #051650, #051650);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 #desktop-nav {
@@ -81,7 +81,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #FFFFFF !important;
   transition: color 0.3s ease;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -95,6 +95,7 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   padding-left: 2rem;
+  color: #FFFFFF !important;
 }
 
 .logo:hover {
@@ -215,6 +216,8 @@ section {
 
 .section__text p {
   font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.5px;
 }
 
 .section__text__p1 {
@@ -224,6 +227,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #000000;
 }
 
 /* Profile picture container - larger size, no animations */
@@ -369,7 +373,7 @@ section {
 
 .section__text p {
   font-weight: 600;
-  color: #90caf9;
+  color: #000000;
   letter-spacing: 0.5px;
 }
 
@@ -398,7 +402,7 @@ section {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 #socials-container {
@@ -460,9 +464,8 @@ section {
 }
 
 .btn-color-2 {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: #000080;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .btn-color-1:hover {
@@ -470,7 +473,7 @@ section {
 }
 
 .btn-color-2:hover {
-  background: rgba(0, 255, 255, 0.1);
+  background: rgba(176, 226, 255, 0.1);
 }
 
 /* ABOUT SECTION - Enhanced UMBC Image */
@@ -481,12 +484,13 @@ section {
 /* Text container with cyan frame */
 .text-container {
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
+  background: #051650;
   border-radius: 2rem;
   padding: 2.5rem;
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Cyan border glow effect */
@@ -499,7 +503,7 @@ section {
   background: linear-gradient(
     135deg,
     transparent,
-    #00ffff,
+    #000080,
     transparent
   );
   -webkit-mask: 
@@ -515,15 +519,13 @@ section {
 
 /* Education items with same frame effect */
 .education-item {
-  position: relative;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  background: #051650;
   border-radius: 2rem;
   padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .education-item::before {
@@ -535,7 +537,7 @@ section {
   background: linear-gradient(
     135deg,
     transparent,
-    #00ffff,
+    #000080,
     transparent
   );
   -webkit-mask: 
@@ -678,9 +680,9 @@ section {
 
 .details-container {
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
+  background: linear-gradient(135deg, rgba(176, 226, 255, 0.1), rgba(176, 226, 255, 0.05));
   border-radius: 1rem;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(176, 226, 255, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   position: relative;
@@ -920,8 +922,8 @@ section {
   position: relative;
   width: 100%;
   border-radius: 2rem;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(176, 226, 255, 0.1), rgba(176, 226, 255, 0.05));
+  border: 1px solid rgba(176, 226, 255, 0.2);
   padding: 2rem;  /* Restored original padding */
 }
 
@@ -944,8 +946,8 @@ section {
 /* First image frame */
 .project-img:nth-child(1) {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(176, 226, 255, 0.2);
+  box-shadow: 0 0 15px rgba(176, 226, 255, 0.1);
 }
 
 /* Second image frame */
@@ -989,23 +991,23 @@ section {
   margin-right: 0.8rem;
   margin-bottom: 0.8rem;
   display: inline-block;
-  color: #ffffff;
-  transition: all 0.3s ease;  /* Smooth transition for hover effects */
-  border: 1px solid rgba(0, 255, 255, 0.2);  /* Subtle border */
+  color: #000000 !important;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(176, 226, 255, 0.2);
 }
 
 .skill-tag:hover {
-  background: rgba(0, 255, 255, 0.15);
+  background: rgba(176, 226, 255, 0.15);
   transform: translateY(-3px);  /* Slight lift effect */
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);  /* Glow effect */
-  border: 1px solid rgba(0, 255, 255, 0.2);  /* Brighter border on hover */
+  box-shadow: 0 5px 15px rgba(176, 226, 255, 0.2);  /* Glow effect */
+  border: 1px solid rgba(176, 226, 255, 0.2);  /* Brighter border on hover */
   color: #ffffff;  /* Brighter text on hover */
 }
 
 /* Optional: Add a subtle active state */
 .skill-tag:active {
   transform: translateY(-1px);  /* Less lift when clicked */
-  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);  /* Reduced glow when clicked */
+  box-shadow: 0 2px 10px rgba(176, 226, 255, 0.1);  /* Reduced glow when clicked */
 }
 
 .btn-container {
@@ -1105,20 +1107,20 @@ section {
 }
 
 .education-item {
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(176, 226, 255, 0.1), rgba(176, 226, 255, 0.05));  /* Matching experience section */
   border-radius: 2rem;
   padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
+  border: 1px solid rgba(176, 226, 255, 0.2);  /* Matching experience section border */
 }
 
 .education-item:hover {
   transform: translateY(-5px);
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(176, 226, 255, 0.15), rgba(176, 226, 255, 0.1));
+  box-shadow: 0 8px 20px rgba(176, 226, 255, 0.2);
+  border: 1px solid rgba(176, 226, 255, 0.3);
 }
 
 .education-item h3 {
@@ -1152,7 +1154,7 @@ section {
   transform: translateX(-50%);
   width: 100px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(176, 226, 255, 0.5), transparent);
 }
 
 /* Responsive padding for smaller screens */
@@ -1223,7 +1225,7 @@ section {
   content: "•";
   position: absolute;
   left: -0.5rem;  /* Position bullet outside of text */
-  color: rgba(0, 255, 255, 0.8);  /* Cyan color matching the line */
+  color: rgba(176, 226, 255, 0.8);  /* Cyan color matching the line */
   font-size: 1.2rem;  /* Slightly larger bullets */
 }
 
@@ -1270,8 +1272,8 @@ section {
 
 /* First image styling */
 .first-img {
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(176, 226, 255, 0.2);
+    box-shadow: 0 0 15px rgba(176, 226, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
 }
 
@@ -1326,24 +1328,24 @@ section {
     transform: translateX(-50%);
     width: 100px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(176, 226, 255, 0.5), transparent);
 }
 
 /* Individual education item */
 .education-item {
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(176, 226, 255, 0.1), rgba(176, 226, 255, 0.05));  /* Matching experience section */
     border-radius: 2rem;
     padding: 2rem;
     transition: all 0.3s ease;
+    border: 1px solid rgba(176, 226, 255, 0.2);  /* Matching experience section border */
 }
 
 /* Hover effect */
 .education-item:hover {
     transform: translateY(-5px);
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(176, 226, 255, 0.15), rgba(176, 226, 255, 0.1));
+    box-shadow: 0 8px 20px rgba(176, 226, 255, 0.2);
+    border: 1px solid rgba(176, 226, 255, 0.3);
 }
 
 /* Education item content */
@@ -1375,20 +1377,24 @@ section {
 
 /* Experience section containers */
 .details-container {
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 139, 139, 0.05));
-    border: 1px solid rgba(0, 255, 255, 0.2);
+    background: #051650 !important;
     border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    margin-bottom: 2rem;
-    transition: all 0.3s ease;
 }
 
-/* Hover effect for containers */
-.details-container:hover {
+/* Project section boxes */
+.details-container.project-card {
+    background: #051650 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure hover states maintain the background */
+.details-container:hover,
+.details-container.project-card:hover {
+    background: #051650 !important;
     transform: translateY(-5px);
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 139, 139, 0.1));
-    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
-    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Experience title styling */
@@ -1520,7 +1526,7 @@ section {
 .btn.btn-color-2 {
     background: transparent;
     color: #ffffff;
-    border: 2px solid rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(176, 226, 255, 0.3);
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.1rem;
@@ -1533,16 +1539,16 @@ section {
 
 /* Hover effects */
 .btn.btn-color-2:hover {
-    background: rgba(0, 255, 255, 0.1);
-    border-color: rgba(0, 255, 255, 0.5);
+    background: rgba(176, 226, 255, 0.1);
+    border-color: rgba(176, 226, 255, 0.5);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(176, 226, 255, 0.2);
 }
 
 /* Active state */
 .btn.btn-color-2:active {
     transform: translateY(-1px);
-    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+    box-shadow: 0 2px 10px rgba(176, 226, 255, 0.1);
 }
 
 /* Optional: Add glow effect on hover */
@@ -1556,7 +1562,7 @@ section {
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(0, 255, 255, 0.2),
+        rgba(176, 226, 255, 0.2),
         transparent
     );
     transition: 0.5s;
@@ -1599,4 +1605,119 @@ section {
 #projects {
     padding-top: 4rem;
     padding-bottom: 2rem;
+}
+
+/* Text colors */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-links a,
+.title,
+.section__text p,
+.section__text__p1,
+.section__text__p2,
+.experience-sub-title,
+.details-container h3,
+.article-container p,
+.education-item h3,
+.education-item p,
+.project-title,
+.project-description,
+.skill-tag {
+    color: #000000 !important;
+}
+
+/* Update all button text colors */
+.btn,
+.btn-color-1,
+.btn-color-2,
+.project-btn,
+.github-cta .project-btn,
+.contact-info-container h3,
+.contact-details h3,
+.contact-details a {
+    color: #000000 !important;
+}
+
+/* Ensure hover states don't override the black color */
+.btn:hover,
+.btn-color-1:hover,
+.btn-color-2:hover,
+.project-btn:hover,
+.contact-info-container:hover h3,
+.contact-details a:hover {
+    color: #000000 !important;
+}
+
+/* All buttons including GitHub, Tableau, Resume */
+.btn,
+.btn-color-1,
+.btn-color-2,
+.project-btn {
+    background: #051650 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* About section container */
+.text-container {
+    background: #051650 !important;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Education items */
+.education-item {
+    background: #051650 !important;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure hover states maintain the background */
+.btn:hover,
+.btn-color-1:hover,
+.btn-color-2:hover,
+.project-btn:hover {
+    background: #051650 !important;
+}
+
+/* Text in navy blue buttons */
+.btn,
+.btn-color-1,
+.btn-color-2,
+.project-btn {
+    color: #FFFFFF !important;
+}
+
+/* Text in navy blue containers */
+.text-container p,
+.education-item h3,
+.education-item p,
+.details-container h3,
+.details-container p,
+.project-card h2,
+.project-card p,
+.project-description,
+.experience-sub-title {
+    color: #FFFFFF !important;
+}
+
+/* Ensure hover states maintain white text */
+.btn:hover,
+.btn-color-1:hover,
+.btn-color-2:hover,
+.project-btn:hover {
+    color: #FFFFFF !important;
 }
