@@ -993,6 +993,18 @@ section {
   border: 2px solid #ffffff;
 }
 
+.project-img-container img,
+.article-container img,
+.project-card img {
+    border: 2px solid #ffffff;
+}
+
+/* Project image styling */
+.project-img,
+.project-card img,
+#projects img {
+    border: 2px solid #ffffff;
+}
 /* First image frame */
 .project-img:nth-child(1) {
   background: rgba(255, 255, 255, 0.05);
