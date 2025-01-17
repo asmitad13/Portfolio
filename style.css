@@ -1191,6 +1191,8 @@ section {
   padding: 1rem 0;
 }
 
+.education-container h2::after { display: none; }
+
 /* Optional: Add an underline effect */
 .education-container h2::after {
   content: '';
@@ -1393,6 +1395,10 @@ section {
     width: 100px;
     height: 2px;
     background: linear-gradient(90deg, transparent, rgba(176, 226, 255, 0.5), transparent);
+}
+#about .title::after { display: none; }
+.title::after {
+  display: none;
 }
 
 /* Individual education item */
