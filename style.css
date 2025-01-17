@@ -634,6 +634,7 @@ section {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .education-section {
@@ -1154,6 +1155,7 @@ section {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .education-item {
