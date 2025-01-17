@@ -1037,9 +1037,13 @@ section {
   margin-right: 0.8rem;
   margin-bottom: 0.8rem;
   display: inline-block;
-  color: #000000 !important;
+  color: #ffffff !important; 
   transition: all 0.3s ease;
   border: 1px solid rgba(176, 226, 255, 0.2);
+}
+
+.project-skills .skill-tag {
+  color: #ffffff !important;
 }
 
 .skill-tag:hover {
