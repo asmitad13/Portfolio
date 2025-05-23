@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("6l1cnHDbDdyWRpomp"); // Replace with your actual public key
+    })();
+  </script>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Asmita Deshpande</div>
@@ -271,7 +277,7 @@
           </div>
           <div class="form-actions">
             <button type="submit" class="btn btn-color-1">Send Message</button>
-            <button type="button" class="btn btn-color-2" onclick="hideEmailForm()">Cancel</button>
+           
           </div>
         </form>
       </div>
@@ -279,7 +285,7 @@
       <!-- Success Message (initially hidden) -->
       <div id="success-message" class="hidden">
         <p>Thank you for your message! I'll get back to you soon.</p>
-        <button class="btn btn-color-1" onclick="hideSuccessMessage()">OK</button>
+       
       </div>
     </section>
     <footer>
