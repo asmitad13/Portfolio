@@ -31,6 +31,21 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body, section {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html::before, html::after, body::before, body::after, section::before, section::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 p {
   color: #000000;
 }
@@ -548,28 +563,9 @@ section {
   padding: 0 !important;
 }
 
-/* Cyan border glow effect */
 .text-container::before {
-  content: '';
-  position: absolute;
-  inset: 0;  /* Covers all sides */
-  border-radius: 2rem;
-  padding: 2px;  /* Border width */
-  background: linear-gradient(
-    135deg,
-    transparent,
-    #000080,
-    transparent
-  );
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+  display: none !important;
+  content: none !important;
 }
 
 /* Education items with same frame effect */
@@ -682,6 +678,7 @@ section {
   margin-bottom: 2rem;
   width: 100%;
   transition: all 0.3s ease;
+  border: none !important;
 }
 
 .text-container p {
@@ -1828,7 +1825,7 @@ h6,
     margin-bottom: 2rem;
     width: 100%;
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none !important;
 }
 
 /* Education items */
@@ -2040,6 +2037,14 @@ section {
     padding: 2.5rem;
 }
 
+/* style.css */
+
+#about .section-container {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
 /* Make sure hidden-children class doesn't add any unwanted styling */
 .hidden-children {
     border: none !important;
@@ -2131,3 +2136,91 @@ section {
   margin: 0 auto;
   display: block;
 }
+/* remove any box or outline on the About section */
+#about,
+#about .section-container,
+#about .hidden-children {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html, body, .container {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: #fff !important;
+}
+/* ======================================================================== */
+/*                          YOUR ORIGINAL CSS HERE                          */
+/*  (everything up to but *not* including the old “remove any box” block)   */
+/* ======================================================================== */
+
+/* … [your entire existing CSS from the top through your last rule before the overrides] … */
+
+/* ======================================================================== */
+/*                          ABOUT SECTION OVERRIDES                          */
+/* ======================================================================== */
+
+/* 1) Ensure the outer <section id="about"> has no border/shadow/radius */
+#about {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 4rem 10rem 2rem !important;
+  margin: 0 auto 3rem !important;
+}
+
+/* 2) Remove styling on the intermediate .section-container wrapper */
+#about .section-container,
+#about .section-container.hidden-children {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+/* 3) Keep only your inner .text-container styled as the navy box */
+#about .text-container {
+  background-color: #051650;    /* your navy background */
+  border-radius: 2rem;          /* your rounded corners */
+  padding: 2.5rem;              /* your desired inner padding */
+  box-shadow: none !important;  /* no extra shadow */
+  margin: 0 auto;               /* center it */
+  max-width: 1000px;            /* optional width constraint */
+}
+
+/* ======================================================================== */
+/*                          REST OF YOUR CSS BELOW                          */
+/* ======================================================================== */
+
+/* … [any rules you had after the old override block] … */
+
+
+/* ============================================================================
+   FORCE-REMOVE any outer box around the About section and its children
+   ============================================================================ */
+   #about,
+   #about *,
+   #about::before,
+   #about::after,
+   #about *::before,
+   #about *::after {
+     border: none    !important;
+     box-shadow: none!important;
+     outline: none   !important;
+   }
+   
+   /* now re-apply only the navy box to your inner text-container */
+   #about .text-container {
+     background-color: #051650 !important;
+     border-radius:     2rem    !important;
+     padding:           2.5rem  !important;
+     margin:            0 auto  !important;
+     max-width:         1000px  !important;
+   }
+   

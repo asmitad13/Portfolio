@@ -13,24 +13,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 
-  <!-- 🔥 INLINE OVERRIDE TO KILL THE ABOUT-SECTION FRAME 🔥 -->
-  <style>
-    /* remove any Jekyll/theme border or shadow around About */
-    #about, #about * {
-      border: none    !important;
-      box-shadow: none!important;
-      outline: none   !important;
-      background: transparent !important;
-    }
-    /* re-apply only your inner navy box */
-    #about .text-container {
-      background-color: #051650 !important;
-      border-radius:     2rem    !important;
-      padding:           2.5rem  !important;
-      max-width:         1000px  !important;
-      margin:            0 auto  !important;
-    }
-  </style>
+  
+
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
@@ -92,7 +76,9 @@
 
     <section id="about">
       <h1 class="title">About Me</h1>
-      <div class="section-container hidden-children">
+      <div
+        class="section-container hidden-children"
+      >
         <div class="text-container">
           <p>
             I am Asmita Deshpande, a dedicated data professional with a passion
@@ -316,7 +302,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div>  
 
         <div class="github-cta">
           <p>Connect with me on Github for more such interesting projects</p>

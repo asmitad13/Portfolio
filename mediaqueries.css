@@ -103,3 +103,34 @@
     text-align: justify;
   }
 }
+/* remove any box or outline on the About section */
+#about,
+#about .section-container,
+#about .hidden-children {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+/* ============================================================================
+   FORCE-REMOVE any outer box around the About section and its children
+   ============================================================================ */
+   #about,
+   #about *,
+   #about::before,
+   #about::after,
+   #about *::before,
+   #about *::after {
+     border: none    !important;
+     box-shadow: none!important;
+     outline: none   !important;
+   }
+   
+   /* now re-apply only the navy box to your inner text-container */
+   #about .text-container {
+     background-color: #051650 !important;
+     border-radius:     2rem    !important;
+     padding:           2.5rem  !important;
+     margin:            0 auto  !important;
+     max-width:         1000px  !important;
+   }
+   
