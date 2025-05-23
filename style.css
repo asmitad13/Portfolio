@@ -883,8 +883,8 @@ section {
 
 #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   height: 70vh;
   background: transparent;
 }
