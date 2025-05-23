@@ -1,0 +1,24 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main    # or master, whichever your default branch is
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Upload site contents
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: .        # publish everything in the repo root
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
