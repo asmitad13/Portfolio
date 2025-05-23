@@ -64,7 +64,7 @@
           <p>I am Asmita Deshpande,  a dedicated data professional with a passion for transforming data into actionable insights that drive meaningful outcomes. Leveraging tools like Tableau, Power BI, and Snowflake, along with cloud platforms such as AWS and Azure, I specialize in creating scalable solutions that enhance decision-making and operational efficiency.</p> <br>
           <p>I enjoy tackling challenges with creativity and precision, blending technical expertise with a deep understanding of business needs. What truly excites me is the opportunity to collaborate with others to solve problems, uncover trends, and create value through data.</p><br>
           <p>My technical skills in Python, SQL, and ETL processes allow me to design efficient data pipelines, automate workflows, and create intuitive dashboards that deliver measurable results. I believe in using data to tell compelling stories that inspire action and foster growth. Beyond my technical abilities, I bring a strong commitment to continuous learning and a collaborative spirit to every project. </p><br>
-          <p>Explore my portfolio to see how I combine technical precision with strategic thinking to deliver impactful solutions. Let’s connect to discuss opportunities and ideas that make a difference.</p>
+          <p>Explore my portfolio to see how I combine technical precision with strategic thinking to deliver impactful solutions. Let's connect to discuss opportunities and ideas that make a difference.</p>
         </div>
       </div>
       <div class="education-container">
@@ -232,12 +232,12 @@
       <p class="section__text__p1">Let's Connect</p>
       <h1 class="title">Contact</h1>
       <div class="contact-info-upper-container hidden-children">
-        <a href="mailto:addeshpande2024@gmail.com" class="contact-info-container">
+        <div class="contact-info-container" onclick="showEmailForm()">
           <div class="contact-icon-wrapper">
             <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
           </div>
-          <h3>Email</h3>
-        </a>
+          <h3>Email Me</h3>
+        </div>
 
         <a href="https://www.linkedin.com/in/asmita-deshpande/" class="contact-info-container">
           <div class="contact-icon-wrapper">
@@ -252,6 +252,34 @@
           </div>
           <h3>Tableau</h3>
         </a>
+      </div>
+      
+      <!-- Email Form (initially hidden) -->
+      <div id="email-form-container" class="hidden">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-color-1">Send Message</button>
+            <button type="button" class="btn btn-color-2" onclick="hideEmailForm()">Cancel</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Success Message (initially hidden) -->
+      <div id="success-message" class="hidden">
+        <p>Thank you for your message! I'll get back to you soon.</p>
+        <button class="btn btn-color-1" onclick="hideSuccessMessage()">OK</button>
       </div>
     </section>
     <footer>
@@ -270,5 +298,68 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      // Email form functionality
+      function showEmailForm() {
+        document.getElementById('email-form-container').classList.remove('hidden');
+        document.querySelector('.contact-info-upper-container').classList.add('hidden');
+      }
+      
+      function hideEmailForm() {
+        document.getElementById('email-form-container').classList.add('hidden');
+        document.querySelector('.contact-info-upper-container').classList.remove('hidden');
+      }
+      
+      function hideSuccessMessage() {
+        document.getElementById('success-message').classList.add('hidden');
+        document.querySelector('.contact-info-upper-container').classList.remove('hidden');
+      }
+      
+      // Form submission handler
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Here you would typically send the form data to your server/email service
+        // For now, we'll just show a success message
+        document.getElementById('email-form-container').classList.add('hidden');
+        document.getElementById('success-message').classList.remove('hidden');
+        
+        // Reset form
+        this.reset();
+        
+        // In a real implementation, you would send this data to your backend or email service
+        // Example using EmailJS (you would need to add their library and initialize with your API key):
+        /*
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+          from_name: name,
+          from_email: email,
+          subject: subject,
+          message: message
+        })
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          document.getElementById('email-form-container').classList.add('hidden');
+          document.getElementById('success-message').classList.remove('hidden');
+        }, function(error) {
+          console.log('FAILED...', error);
+          alert('Failed to send message. Please try again later.');
+        });
+        */
+      });
+      
+      // Existing toggleMenu function
+      function toggleMenu() {
+        const menuLinks = document.querySelector('.menu-links');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        menuLinks.classList.toggle('open');
+        hamburgerIcon.classList.toggle('open');
+      }
+    </script>
   </body>
 </html>
