@@ -11,13 +11,13 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("6l1cnHDbDdyWRpomp"); // your Public Key
+      })();
+    </script>
   </head>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("6l1cnHDbDdyWRpomp"); // Replace with your actual public key
-    })();
-  </script>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Asmita Deshpande</div>
@@ -46,6 +46,7 @@
         </div>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -60,61 +61,98 @@
         </div>
       </div>
       <div class="section__pic-container profile-pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Asmita Deshpande profile picture" class="profile-pic" />
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Asmita Deshpande profile picture"
+          class="profile-pic"
+        />
       </div>
     </section>
+
     <section id="about">
       <h1 class="title">About Me</h1>
       <div class="section-container hidden-children">
         <div class="text-container">
-          <p>I am Asmita Deshpande,  a dedicated data professional with a passion for transforming data into actionable insights that drive meaningful outcomes. Leveraging tools like Tableau, Power BI, and Snowflake, along with cloud platforms such as AWS and Azure, I specialize in creating scalable solutions that enhance decision-making and operational efficiency.</p> <br>
-          <p>I enjoy tackling challenges with creativity and precision, blending technical expertise with a deep understanding of business needs. What truly excites me is the opportunity to collaborate with others to solve problems, uncover trends, and create value through data.</p><br>
-          <p>My technical skills in Python, SQL, and ETL processes allow me to design efficient data pipelines, automate workflows, and create intuitive dashboards that deliver measurable results. I believe in using data to tell compelling stories that inspire action and foster growth. Beyond my technical abilities, I bring a strong commitment to continuous learning and a collaborative spirit to every project. </p><br>
-          <p>Explore my portfolio to see how I combine technical precision with strategic thinking to deliver impactful solutions. Let's connect to discuss opportunities and ideas that make a difference.</p>
+          <p>
+            I am Asmita Deshpande, a dedicated data professional with a passion
+            for transforming data into actionable insights that drive
+            meaningful outcomes. Leveraging tools like Tableau, Power BI, and
+            Snowflake, along with cloud platforms such as AWS and Azure, I
+            specialize in creating scalable solutions that enhance decision‐
+            making and operational efficiency.
+          </p>
+          <br />
+          <p>
+            I enjoy tackling challenges with creativity and precision, blending
+            technical expertise with a deep understanding of business needs.
+            What truly excites me is the opportunity to collaborate with others
+            to solve problems, uncover trends, and create value through data.
+          </p>
+          <br />
+          <p>
+            My technical skills in Python, SQL, and ETL processes allow me to
+            design efficient data pipelines, automate workflows, and create
+            intuitive dashboards that deliver measurable results. I believe in
+            using data to tell compelling stories that inspire action and
+            foster growth. Beyond my technical abilities, I bring a strong
+            commitment to continuous learning and a collaborative spirit to
+            every project.
+          </p>
+          <br />
+          <p>
+            Explore my portfolio to see how I combine technical precision with
+            strategic thinking to deliver impactful solutions. Let's connect to
+            discuss opportunities and ideas that make a difference.
+          </p>
         </div>
       </div>
       <div class="education-container">
         <h2>Education</h2>
         <div class="education-item">
-          <h3>Master of Science <br>
-            Information Systems</h3>
+          <h3>
+            Master of Science <br />
+            Information Systems
+          </h3>
           <p>University of Maryland Baltimore County</p>
           <p>2022 - 2024</p>
         </div>
         <div class="education-item">
-          <h3>Bachelor of Technology <br>
-            Computer Engineering</h3>
+          <h3>
+            Bachelor of Technology <br />
+            Computer Engineering
+          </h3>
           <p>University of Pune</p>
           <p>2016 - 2020</p>
         </div>
       </div>
     </section>
+
     <section id="experience" class="hidden">
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
             <h3>Data Analyst</h3>
-            <p class="experience-sub-title">DXC Technology | July 2020 - July 2022</p>
-            <div class="article-container">
-              
-            </div>
+            <p class="experience-sub-title">
+              DXC Technology | July 2020 - July 2022
+            </p>
+            <div class="article-container"></div>
           </div>
-          
+
           <div class="details-container">
             <h3>Student IT Project Assistant</h3>
-            <p class="experience-sub-title">University of Maryland Baltimore County  | Jan 2022 - May 2024</p>
-            <div class="article-container">
-              
-            </div>
+            <p class="experience-sub-title">
+              University of Maryland Baltimore County | Jan 2022 - May 2024
+            </p>
+            <div class="article-container"></div>
           </div>
-          
+
           <div class="details-container">
             <h3>Summer Data Intern</h3>
-            <p class="experience-sub-title">StraViso India Pvt. Ltd. | May 2019 - July 2019</p>
-            <div class="article-container">
-              
-            </div>
+            <p class="experience-sub-title">
+              StraViso India Pvt. Ltd. | May 2019 - July 2019
+            </p>
+            <div class="article-container"></div>
           </div>
         </div>
       </div>
@@ -129,20 +167,26 @@
             <div class="article-container">
               <h2 class="project-title">1. Pizza Sales Analysis</h2>
               <div class="project-img-grid">
-                <img src="./assets/Pizza-sales2.png" 
-                     alt="Pizza Sales Data Analysis Project" 
-                     style="width: 90%; height: auto; display: block; margin: 20px auto;" 
+                <img
+                  src="./assets/Pizza-sales2.png"
+                  alt="Pizza Sales Data Analysis Project"
+                  style="width: 90%; height: auto; display: block; margin: 20px auto;"
                 />
-                <img src="./assets/Pizza-sales.png" 
-                     alt="Pizza Sales Data Analysis Project" 
-                     style="width: 90%; height: auto; display: block; margin: 20px auto;" 
+                <img
+                  src="./assets/Pizza-sales.png"
+                  alt="Pizza Sales Data Analysis Project"
+                  style="width: 90%; height: auto; display: block; margin: 20px auto;"
                 />
               </div>
             </div>
-            
+
             <p class="project-description">
-              <strong>The project involves analyzing pizza sales data using SQL for data extraction and transformation, and Tableau for creating dynamic dashboards. 
-              The objective is to derive actionable insights to inform business decisions.</strong>
+              <strong>
+                The project involves analyzing pizza sales data using SQL for
+                data extraction and transformation, and Tableau for creating
+                dynamic dashboards. The objective is to derive actionable
+                insights to inform business decisions.
+              </strong>
             </p>
             <div class="project-skills">
               <span class="skill-tag">SQL</span>
@@ -153,60 +197,89 @@
               <span class="skill-tag">Databases</span>
             </div>
             <div class="btn-container" style="justify-content: center;">
-              <a href="https://github.com/asmitad13/Pizza-Sales-Analytics" class="btn btn-color-2 project-btn" target="_blank">
-                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+              <a
+                href="https://github.com/asmitad13/Pizza-Sales-Analytics"
+                class="btn btn-color-2 project-btn"
+                target="_blank"
+              >
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
                 GitHub
               </a>
-              <a href="https://public.tableau.com/app/profile/asmita.deshpande/viz/PizzaSales_17309055213350/Home-PizzaSales" class="btn btn-color-2 project-btn" target="_blank">
-                <img src="./assets/Tableau-icon.png" alt="Tableau icon" class="icon contact-icon" />
+              <a
+                href="https://public.tableau.com/app/profile/asmita.deshpande/viz/PizzaSales_17309055213350/Home-PizzaSales"
+                class="btn btn-color-2 project-btn"
+                target="_blank"
+              >
+                <img
+                  src="./assets/Tableau-icon.png"
+                  alt="Tableau icon"
+                  class="icon contact-icon"
+                />
                 Tableau
               </a>
             </div>
           </div>
-    
+
           <!-- Project 2 -->
           <div class="details-container project-card">
             <h2 class="project-title">2. Zillow Data Analysis</h2>
             <div class="article-container">
-              <img src="./assets/Zillow-Data-analytics1.png" 
-                   alt="Zillow Data Analytics Architecture" 
-                   style="width: 90%; height: auto; display: block; margin: 20px auto 40px auto; border-radius: 10px;" 
+              <img
+                src="./assets/Zillow-Data-analytics1.png"
+                alt="Zillow Data Analytics Architecture"
+                style="width: 90%; height: auto; display: block; margin: 20px auto 40px auto; border-radius: 10px;"
               />
             </div>
-            <p class="project-description" style="margin-top: 20px; padding: 0 20px;">
-              <strong>This project demonstrates how to build and automate a Python-based ETL (Extract, Transform, Load) pipeline for real estate data sourced from Zillow's Rapid API. 
-              The pipeline leverages AWS services and Apache Airflow for orchestration, resulting in efficient data transformation and visualization.</strong>
+            <p
+              class="project-description"
+              style="margin-top: 20px; padding: 0 20px;"
+            >
+              <strong>
+                This project demonstrates how to build and automate a Python‐based
+                ETL (Extract, Transform, Load) pipeline for real estate data
+                sourced from Zillow's Rapid API. The pipeline leverages AWS
+                services and Apache Airflow for orchestration, resulting in
+                efficient data transformation and visualization.
+              </strong>
             </p>
             <div class="project-skills">
               <span class="skill-tag">ETL</span>
               <span class="skill-tag">Lambda Function</span>
-              <span class="skill-tag">Apache Airflow </span>
+              <span class="skill-tag">Apache Airflow</span>
               <span class="skill-tag">s3 Bucket</span>
               <span class="skill-tag">AWS</span>
               <span class="skill-tag">Amazon Redshift</span>
             </div>
             <div class="btn-container" style="justify-content: center;">
-              <a href="https://github.com/asmitad13/Zillow-Data-Analytics" class="btn btn-color-2 project-btn" target="_blank">
-                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+              <a
+                href="https://github.com/asmitad13/Zillow-Data-Analytics"
+                class="btn btn-color-2 project-btn"
+                target="_blank"
+              >
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
                 GitHub
               </a>
             </div>
           </div>
-    
+
           <!-- Project 3 -->
           <div class="details-container project-card">
             <h2 class="project-title">3. Road Accident Analysis</h2>
             <div class="article-container" style="padding: 20px 20px 30px 20px;">
-              <img src="./assets/road-accident-excel.png" 
-                   alt="Road Accident Analysis Dashboard" 
-                   class="project-img" 
-                   style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 10px;" 
+              <img
+                src="./assets/road-accident-excel.png"
+                alt="Road Accident Analysis Dashboard"
+                class="project-img"
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 10px;"
               />
             </div>
             <p class="project-description" style="margin-top: 20px;">
-              The project focuses on analyzing road accident data and visualizing key insights using Microsoft Excel. 
-              The goal is to identify trends, patterns, and risk factors to help in devising measures to reduce road accidents. 
-              The project includes data cleaning, transformation, and an interactive dashboard for real-time exploration of the dataset
+              The project focuses on analyzing road accident data and
+              visualizing key insights using Microsoft Excel. The goal is to
+              identify trends, patterns, and risk factors to help in devising
+              measures to reduce road accidents. The project includes data
+              cleaning, transformation, and an interactive dashboard for
+              real-time exploration of the dataset.
             </p>
             <div class="project-skills">
               <span class="skill-tag">Microsoft Excel</span>
@@ -216,78 +289,112 @@
               <span class="skill-tag">Data Transformation</span>
             </div>
             <div class="btn-container" style="justify-content: center;">
-              <a href="https://github.com/asmitad13/Road-Accidents-Analytics" class="btn btn-color-2 project-btn" target="_blank">
-                <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+              <a
+                href="https://github.com/asmitad13/Road-Accidents-Analytics"
+                class="btn btn-color-2 project-btn"
+                target="_blank"
+              >
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
                 GitHub
               </a>
             </div>
           </div>
         </div>
+
         <div class="github-cta">
           <p>Connect with me on Github for more such interesting projects</p>
-          <a href="https://github.com/asmitad13" class="btn btn-color-2 project-btn" target="_blank">
-            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+          <a
+            href="https://github.com/asmitad13"
+            class="btn btn-color-2 project-btn"
+            target="_blank"
+          >
+            <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
             GitHub
           </a>
         </div>
       </div>
-     
     </section>
-    
+
     <section id="contact" class="hidden">
-      
       <h1 class="title">Contact</h1>
       <div class="contact-info-upper-container hidden-children">
-        <!-- <div class="contact-info-container" onclick="showEmailForm()">
+        <a
+          href="https://www.linkedin.com/in/asmita-deshpande/"
+          class="contact-info-container"
+        >
           <div class="contact-icon-wrapper">
-            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-          </div>
-          <h3>Email Me</h3>
-        </div> -->
-
-        <a href="https://www.linkedin.com/in/asmita-deshpande/" class="contact-info-container">
-          <div class="contact-icon-wrapper">
-            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
           </div>
           <h3>LinkedIn</h3>
         </a>
 
-        <a href="https://public.tableau.com/app/profile/asmita.deshpande/vizzes" class="contact-info-container">
+        <a
+          href="https://public.tableau.com/app/profile/asmita.deshpande/vizzes"
+          class="contact-info-container"
+        >
           <div class="contact-icon-wrapper">
-            <img src="./assets/TABLEAU-ICON.JPEG" alt="Tableau icon" class="icon contact-icon" />
+            <img
+              src="./assets/TABLEAU-ICON.JPEG"
+              alt="Tableau icon"
+              class="icon contact-icon"
+            />
           </div>
           <h3>Tableau</h3>
         </a>
       </div>
-      
-      <!-- Email Form (initially hidden) -->
+
       <div id="email-form-container" class="hidden">
         <form id="contact-form" class="contact-form">
           <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
           </div>
           <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
           </div>
           <div class="form-group">
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
           </div>
           <div class="form-group">
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit" class="btn btn-color-1">Send Message</button>
-           
           </div>
         </form>
       </div>
-      
-      <!-- Success Message (initially hidden) -->
+
       <div id="success-message" class="hidden">
         <p>Thank you for your message! I'll get back to you soon.</p>
-       
       </div>
     </section>
+
     <footer>
       <div class="container">
         <nav class="nav-links-container">
@@ -303,63 +410,46 @@
         </p>
       </div>
     </footer>
-    <script src="script.js"></script>
+
     <script>
-      // Email form functionality
-      function showEmailForm() {
-        document.getElementById('email-form-container').classList.remove('hidden');
-        document.querySelector('.contact-info-upper-container').classList.add('hidden');
-      }
-      
-      function hideEmailForm() {
-        document.getElementById('email-form-container').classList.add('hidden');
-        document.querySelector('.contact-info-upper-container').classList.remove('hidden');
-      }
-      
-      function hideSuccessMessage() {
-        document.getElementById('success-message').classList.add('hidden');
-        document.querySelector('.contact-info-upper-container').classList.remove('hidden');
-      }
-      
-      // Form submission handler
-      document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        
-        // Here you would typically send the form data to your server/email service
-        // For now, we'll just show a success message
-        document.getElementById('email-form-container').classList.add('hidden');
-        document.getElementById('success-message').classList.remove('hidden');
-        
-        // Reset form
-        this.reset();
-        
-        // In a real implementation, you would send this data to your backend or email service
-        // Example using EmailJS (you would need to add their library and initialize with your API key):
-        /*
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-          from_name: name,
-          from_email: email,
-          subject: subject,
-          message: message
-        })
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          document.getElementById('email-form-container').classList.add('hidden');
-          document.getElementById('success-message').classList.remove('hidden');
-        }, function(error) {
-          console.log('FAILED...', error);
-          alert('Failed to send message. Please try again later.');
+      // Form submission handler with your real Service & Template IDs
+      document
+        .getElementById('contact-form')
+        .addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value;
+
+          emailjs
+            .send('service_oknjlje', 'template_ofu67mu', {
+              from_name: name,
+              from_email: email,
+              subject: subject,
+              message: message,
+            })
+            .then(
+              function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document
+                  .getElementById('email-form-container')
+                  .classList.add('hidden');
+                document
+                  .getElementById('success-message')
+                  .classList.remove('hidden');
+              },
+              function (error) {
+                console.error('FAILED...', error);
+                alert('Failed to send message. Please try again later.');
+              }
+            );
+
+          this.reset();
         });
-        */
-      });
-      
-      // Existing toggleMenu function
+
+      // Hamburger menu toggle
       function toggleMenu() {
         const menuLinks = document.querySelector('.menu-links');
         const hamburgerIcon = document.querySelector('.hamburger-icon');
@@ -369,4 +459,5 @@
     </script>
   </body>
 </html>
+
 
