@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Asmita Deshpande's Portfolio"
-    />
+    <meta name="description" content="Asmita Deshpande's Portfolio" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -179,7 +176,6 @@
                 />
               </div>
             </div>
-
             <p class="project-description">
               <strong>
                 The project involves analyzing pizza sales data using SQL for
@@ -230,10 +226,7 @@
                 style="width: 90%; height: auto; display: block; margin: 20px auto 40px auto; border-radius: 10px;"
               />
             </div>
-            <p
-              class="project-description"
-              style="margin-top: 20px; padding: 0 20px;"
-            >
+            <p class="project-description" style="margin-top: 20px; padding: 0 20px;">
               <strong>
                 This project demonstrates how to build and automate a Python‐based
                 ETL (Extract, Transform, Load) pipeline for real estate data
@@ -331,7 +324,6 @@
           </div>
           <h3>LinkedIn</h3>
         </a>
-
         <a
           href="https://public.tableau.com/app/profile/asmita.deshpande/vizzes"
           class="contact-info-container"
@@ -412,7 +404,7 @@
     </footer>
 
     <script>
-      // Form submission handler with your real Service & Template IDs
+      // Form submission handler with updated Service & Template IDs
       document
         .getElementById('contact-form')
         .addEventListener('submit', function (e) {
@@ -424,11 +416,11 @@
           const message = document.getElementById('message').value;
 
           emailjs
-            .send('service_oknjlje', 'template_ofu67mu', {
-              from_name: name,
+            .send('service_chtjefu', 'template_ofu67mu', {
+              from_name:  name,
               from_email: email,
-              subject: subject,
-              message: message,
+              subject:    subject,
+              message:    message,
             })
             .then(
               function (response) {
@@ -451,7 +443,7 @@
 
       // Hamburger menu toggle
       function toggleMenu() {
-        const menuLinks = document.querySelector('.menu-links');
+        const menuLinks     = document.querySelector('.menu-links');
         const hamburgerIcon = document.querySelector('.hamburger-icon');
         menuLinks.classList.toggle('open');
         hamburgerIcon.classList.toggle('open');
@@ -459,5 +451,3 @@
     </script>
   </body>
 </html>
-
-
