@@ -921,50 +921,61 @@ section {
   margin: 0;
 }
 
-.contact-icon-wrapper {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.contact-icons-top {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-icons-top .contact-icon-wrapper {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a1a, #233a5e);
+  border: 2px solid #e0e6f6;
+  box-shadow: 0 2px 8px rgba(20, 30, 60, 0.08);
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
 }
 
-.contact-icon-wrapper.email {
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.contact-icons-top .contact-icon-wrapper:hover {
+  box-shadow: 0 4px 16px rgba(20, 30, 60, 0.18);
+  border-color: #3b5998;
+  background: linear-gradient(135deg, #233a5e, #1a1a1a);
 }
 
+.contact-icons-top .contact-icon {
+  width: 26px;
+  height: 26px;
+  filter: none;
+  opacity: 1;
+  background: none;
+  border-radius: 0;
+  transition: transform 0.3s;
+}
+
+.contact-icons-top .contact-icon:hover {
+  transform: scale(1.13);
+}
+
+/* Remove special Tableau overrides for consistency */
+.contact-icon-wrapper.tableau,
+.contact-icon-wrapper.email,
 .contact-icon-wrapper.linkedin {
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.contact-icon-wrapper.tableau {
-  background: transparent;
-  border: none;
-}
-
-.contact-icon {
-  width: 25px;
-  height: 25px;
-  filter: brightness(1) invert(1);
-  opacity: 0.9;
+  background: unset;
+  border: unset;
 }
 
 .tableau .contact-icon {
   filter: none;
   opacity: 1;
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-}
-
-.contact-icon-wrapper.tableau {
-  background: transparent;
-  border: none;
+  background: none;
+  width: 26px;
+  height: 26px;
 }
 
 .contact-details {
